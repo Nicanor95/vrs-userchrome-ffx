@@ -1,0 +1,70 @@
+:root {
+	/**
+	 * Reduced padding between buttons.
+	 */
+	--toolbarbutton-outer-padding: 1px !important;
+}
+
+#urlbar-container[breakout] {
+	/**
+	 * Remove Height of urlbar, this makes it as thin as it can go.
+	 * there's a padding of 1px that I don't know where it comes from.(1)
+	 */
+  	min-height: 0px !important;
+}
+
+#nav-bar {
+	/**
+	 * Padding of the url-bar, 0px makes a 1px padding, check (*1)
+	 */
+  	padding: 1px 0px 1px 0px !important;
+}
+
+/**
+ * Making proper tabs.
+ */
+
+.tabbrowser-tab {
+  height: unset !important;
+  --tab-min-height: 2rem;
+  max-height: 2.2rem;
+  align-self: end;
+}
+
+.tab-background {
+  margin-block: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  /*! transform: perspective(10px) rotateX(1deg); /*Trapezoid shape*/
+}
+
+.tab-content {
+  padding: 10px 10px !important;
+}
+
+.tab-background:is([selected],[multiselected]) { /* Color the tab  */
+  background-color: var(--toolbar-bgcolor) !important;
+  background-image: var(--toolbar-bgimage) !important;
+}
+
+.tab-label-container {
+  display: flex !important;
+  height: unset !important;
+  flex-direction: row;
+  /*justify-items: safe center !important;*/
+  justify-content: safe center !important;
+}
+
+.tab-label {
+    overflow: hidden !important;
+    /*text-overflow: ellipsis !important;*/
+}
+
+.tabbrowser-tab:not([labelendaligned], :hover) > .tab-stack > .tab-content > .tab-close-button {
+  padding-inline-start: 6px !important;
+  width: 24px !important;
+}
+
+#TabsToolbar .toolbarbutton-1 {
+  scale: .8;
+}
