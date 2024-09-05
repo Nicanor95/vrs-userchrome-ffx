@@ -68,3 +68,7 @@
 #TabsToolbar .toolbarbutton-1 {
   scale: .8;
 }
+
+#navigator-toolbox {
+  border-bottom-color:black !important;
+}
