@@ -65,8 +65,13 @@
   width: 24px !important;
 }
 
+#TabsToolbar {
+  max-height: 2.4rem;
+}
+
 #TabsToolbar .toolbarbutton-1 {
-  scale: .8;
+  align-self: end;
+  scale: .7;
 }
 
 #navigator-toolbox {
