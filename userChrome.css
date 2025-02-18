@@ -75,5 +75,5 @@
 }
 
 #navigator-toolbox {
-  border-bottom-color:black !important;
+  border-bottom-color: light-dark(var(--urlbar-box-focus-bgcolor),var(--toolbar-bgcolor)) !important;
 }
